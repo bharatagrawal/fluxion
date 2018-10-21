@@ -7,19 +7,19 @@ Fluxion is a remake of linset by vk496 with (hopefully) less bugs and more funct
 This is a social engineering attack and it's pointless to drag clients in automatically. The script relies on the fact that a user should be present in order to enter the wireless credentials.
 
 ### "There's no Internet connectivity in the fake access point"
-There shouldn't be one. All of the traffic is being sinkholed to the built in captive portal via a fake DNS responder in order to capture the credentials.
+There shouldn't be one. All of the traffic is being sinkholed to the built-in captive portal via a fake DNS responder in order to capture the credentials.
 
 #### "Fake sites don't work"
-There might be a problem with lighttpd. The experimental version is tested on lighttpd 1.439-1, anything neweer may break functionality. If you have problems, please use the stable version. For more information check this [fix] (https://github.com/deltaxflux/fluxion/wiki/fix) out.
+There might be a problem with Lighttpd. The experimental version is tested on Lighttpd 1.439-1, anything newer may break functionality. If you have problems, please use the stable version. For more information check this [fix] (https://github.com/deltaxflux/fluxion/wiki/fix) out.
 
 #### "Experimental menu is not responsive"
-In the experimental version it will automatically check the handshake. I will fix the menu shortly. If you need a GUI, use the stable version (which doesn't automatically control handshakes).
+In the experimental version, it will automatically check the handshake. I will fix the menu shortly. If you need a GUI, use the stable version (which doesn't automatically control handshakes).
 
 #### "I need to sign in (on Android)"
 This is how the script works. The fake captive portal is set up by the script itself to collect the credentials. Don't freak, it's al okay.
 
 #### "The MAC address of the fake access point differs from the original"
-The MAC address of the fake access point differs by one octet from the original in order to prevent fluxion deauthenticating clients from itself during the session. 
+The MAC address of the fake access point differs by one octet from the original in order to prevent fluxion de-authenticating clients from itself during the session. 
 
 ## Updates
 If you want to submit a feature, do so by labeling your issue as an "enhancement" or submit a PR. I don't have enough time to make daily changes to fluxion, sorry.
